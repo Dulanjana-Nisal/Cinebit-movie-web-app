@@ -1,0 +1,183 @@
+.container .section .section-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 25px;
+    width: 85%;
+    margin: auto;
+    justify-content: start;
+}
+
+.container .section .section-body .movie-card {
+    height: 380px;
+    border: 1px solid rgba(255, 255, 255, 0.132);
+    border-radius: 15px;
+    background-color: #16161e99;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.container .section .section-body .movie-card:hover {
+    transform: translateY(-8px);
+    border: 1px solid #ef444459;
+    cursor: pointer;
+}
+
+.container .section .section-body .movie-card .card-head {
+    height: 77%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(0, 0, 0, .95) 0%, rgba(0, 0, 0, .4) 50%, transparent 100%)
+}
+
+.container .section .section-body .movie-card .card-head img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-position: center;
+    object-fit: cover;
+    transition: 0.3s;
+    position: relative;
+}
+
+.container .section .section-body .movie-card:hover .card-head img {
+    transform: scale(1.05);
+    opacity: 0.5;
+}
+
+.container .section .section-body .movie-card:hover .card-head .card-functions .fav{
+    display: flex;
+}
+
+.container .section .section-body .movie-card .card-head .card-functions .fav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    background-color: #1a1a24d1;
+    border: none;
+    border-radius: 50%;
+    top: 8px;
+    left: 12px;
+    color: #fff;
+    font-weight: 500;
+    font-weight: 600;
+    transition: 0.25s;
+    display: none;
+}
+.container .section .section-body .movie-card .card-head .card-functions .fav-add{
+    background-color: #ef4444;
+    display: flex;
+    border: none;
+    color: #fff;
+}
+.container .section .section-body .movie-card .card-head .card-functions .fav-add path{
+    fill: #fff;
+}
+
+.container .section .section-body .movie-card .card-head .card-functions .fav:hover {
+    background-color: #ef4444;
+    cursor: pointer;
+}
+
+.container .section .section-body .movie-card .card-head .card-functions .play {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ef4444;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #f87171;
+    transition: 0.25s;
+    display: none;
+}
+
+.container .section .section-body .movie-card:hover .card-head .card-functions .play{
+    display: flex;
+}
+
+
+.container .section .section-body .movie-card .card-head .card-functions .play:hover {
+    zoom: 1.07;
+    cursor: pointer;
+}
+
+.container .section .section-body .movie-card .card-body {
+    padding: 10px 15px 15px 15px;
+}
+
+.container .section .section-body .movie-card .card-body .title p {
+    color: #fff;
+    font-weight: 500;
+    margin: 6px 0;
+    width: 100%;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container .section .section-body .movie-card .card-body .data {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.container .section .section-body .movie-card .card-body .data .ratings {
+    display: flex;
+    align-items: center;
+    color: #facc15;
+    font-weight: 500;
+    column-gap: 2px;
+    margin-right: 10px;
+}
+
+.container .section .section-body .movie-card .card-body .data .year {
+    color: #a1a1aacb;
+}
+
+/* --------------------------- Responcive desgn --------------------------- */
+@media(max-width: 1190px) {
+    .container .section .section-body {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 800px) {
+    .container .section .section-body {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width: 600px) {
+    .container .section .section-body {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 490px) {
+    .container .section .section-body .movie-card{
+        height: 350px;
+    }
+
+}
+@media(max-width: 438px) {
+    .container .section .section-body .movie-card{
+        height: 300px;
+    }
+    .container .section .section-body .movie-card .card-head{
+        height: 73%;
+    }
+    
+}

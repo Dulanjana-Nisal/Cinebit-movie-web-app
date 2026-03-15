@@ -1,0 +1,58 @@
+.container .movie-section .section-head {
+    margin-top: 30px;
+}
+.container .movie-section .section-head .head-right-movie .clear-btn{
+    color: #fff;
+    text-align: center;
+}
+.container .movie-section .watchlist-body{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+.container .movie-section .section-body .empty-watchlist{
+    width: 85vw;
+}
+.container .movie-section .section-body .empty-watchlist svg{
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #ef44441a;
+    border: 1px solid #ef444433;
+    margin-bottom: 10px;
+}
+.container .movie-section .section-body .empty-watchlist h1{
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0;
+}
+.container .movie-section .section-body .empty-watchlist p{
+    color: #a1a1aa;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+.container .movie-section .section-body .empty-watchlist button{
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    background: linear-gradient(135deg, #ef4444, #a855f7);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, .4);
+    transition: 0.2s;
+}
+.container .movie-section .section-body .empty-watchlist button:hover {
+    box-shadow: 2px 6px 25px rgba(239, 68, 68, .4);
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+@media(max-width: 480px){
+    .container .movie-section .section-head .wathclist-head-right{
+        display: block;
+        column-gap: 10px;
+    }
+}

@@ -1,0 +1,12 @@
+.loading-page{
+    width: fit-content;
+    height: 50vh;
+    color: #fff;
+}
+.loading-page p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}

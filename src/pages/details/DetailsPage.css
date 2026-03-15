@@ -1,0 +1,96 @@
+.container .hero .banner{
+    height: 80vh;
+}
+.container .details-section{
+    padding: 0;
+}
+.container .details-section .seasons{
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+.container .details-section .seasons .section-head{
+    margin: 20px 0 30px 0;
+}
+.container .details-section .seasons .section-head .head-left-movie h1{
+    color: #fff;
+    width: 85%;
+    margin: auto;
+}
+.container .casting {
+    padding: 10px 0 30px 0;
+}
+.container .casting .casting-head{
+    width: 85%;
+    margin: auto;
+}
+.container .casting .casting-head p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.container .casting .casting-body{
+    width: 85%;
+    margin: 20px auto;
+}
+.container .casting .casting-body .profiles-row{
+    max-width: 950px;
+    overflow: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow-x: scroll;
+}
+.container .casting .casting-body .profiles-row .profile-card{
+    width: 80px;
+    text-align: center;
+    padding: 10px 0;
+    margin-right: 40px;
+}
+.container .casting .casting-body .profiles-row .profile-card .img img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid #ffffff14;
+}
+.container .casting .casting-body .profiles-row .profile-card .data h3{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .casting .casting-body .profiles-row .profile-card .data p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #71717a;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .recommendations{
+    padding: 30px 0 50px 0;
+}
+.container .recommendations .section-head{
+    width: 85%;
+    margin: 20px auto;
+}
+.container .recommendations .section-head h1{
+    font-size: 20px;
+    color: #fff;
+}
+
+@media(max-width: 520px){
+    .container .details-section{
+        padding: 20px 0;
+    }
+}
+
+

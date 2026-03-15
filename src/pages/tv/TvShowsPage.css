@@ -1,0 +1,130 @@
+.container .tv-section{
+    min-height: 100vh;
+}
+.container .tv-section .section-head{
+    width: 85%;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+.container .tv-section .section-head .head-left-tv{
+    padding-top: 5%;
+}
+.container .tv-section .section-head .head-left-tv h1{
+    color: #fff;
+    font-size: 32px;
+}
+.container .tv-section .section-head .head-left-tv p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #a1a1aa;
+    margin: 12px 0;
+}
+.container .tv-section .section-head .head-right-tv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+.container .tv-section .section-head .head-right-tv button{
+    padding: 10px 16px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffffff08;
+    border: 1px solid rgba(255, 255, 255, 0.132);
+    transition: 0.25s;
+    color: #a1a1aa;
+    backdrop-filter: blur(30px);
+}
+.container .tv-section .section-head .head-right-tv .selected{
+    color: #fff;
+    background: linear-gradient(135deg, #ef4444, #a855f7);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, .4);
+}
+.container .tv-section .section-head .head-right-tv button:hover{
+    background-color: rgba(187, 182, 182, 0.116);
+    cursor: pointer;
+    color: #fff;
+}
+.container .section-footer{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+.container .section-footer button{
+    padding: 10px 16px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffffff08;
+    border: 1px solid rgba(255, 255, 255, 0.132);
+    transition: 0.25s;
+    color: #fff;
+    backdrop-filter: blur(30px);
+    display: flex;
+    align-content: center;
+}
+.container .section-footer .prev-btn svg{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.container .section-footer .next-btn svg{
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.container .section-footer .counter{
+    font-size: 16px;
+    color: #a1a1aa;
+    font-weight: 500;
+    margin: 0 25px;
+}
+
+
+
+/* --------------------------- Responcive desgn --------------------------- */
+@media(max-width: 810px) {
+    .container .tv-section .section-head{
+        text-align: center;
+        display: block;
+    }
+    .container .tv-section .section-head .head-right-tv{
+        margin-top: 20px;
+    }
+}
+@media(max-width: 575px) {
+    .container .tv-section .section-head .head-right-tv button{
+        font-size: 12px
+    }
+    .container .tv-section .section-head .head-left-tv h1{
+        font-size: 25px;
+    }
+}
+@media(max-width: 500px) {
+    .container .tv-section .section-head{
+        display: block;
+        text-align: center;
+    }
+}
+@media(max-width: 480px) {
+    .container .tv-section .section-head{
+        display: block;
+        text-align: center;
+    }
+    .container .tv-section .section-head .head-right-tv{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding-top: 20px;
+    }
+}

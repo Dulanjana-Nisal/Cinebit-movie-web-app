@@ -1,0 +1,116 @@
+.container .language-section{
+    height: fit-content;
+}
+.container .language-section .section-head{
+    padding-top: 60px;
+    width: 85%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.container .language-section .section-head .head-left-genres h1{
+    color: #fff;
+    font-size: 32px;
+}
+.container .language-section .section-head .head-left-genres p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #a1a1aa;
+    margin: 12px 0;
+}
+.container .language-section .section-body-genres{
+    width: 85%;
+    margin: auto;
+}
+.container .language-section .section-body-genres .genre-body .genre-body-head{
+    display: flex;
+    align-items: center;
+}
+.container .language-section .section-body-genres .genre-body-head .sci-fi-svg{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(6, 182, 212, .15), rgba(8, 145, 178, .15));
+    border: 1px solid #06b6d433;
+    border-radius: 10px;
+}
+.container .language-section .section-body-genres .genre-body-head .tv-svg{
+    background: linear-gradient(135deg, rgba(59, 130, 246, .15), rgba(6, 182, 212, .15));;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #3b82f633;
+}
+.container .language-section .section-body-genres .genre-body .genre-body-head p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+.container .language-section .section-body-genres .genre-body .genre-body-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 30px 0;
+}
+.container .language-section .section-body-genres .genre-body .genre-body-body .genre-card{
+    padding: 32px 0;
+    background: linear-gradient(135deg, rgba(239, 68, 68, .15), rgba(239, 68, 68, .05));;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #ef444433;
+    transition: 0.3s;
+}
+.container .language-section .section-body-genres .genre-body .genre-body-body .genre-card:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, .4);
+}
+.container .language-section .section-body-genres .genre-body .genre-body-body .genre-card h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+.container .language-section .section-body-genres .genre-body .genre-body-body .genre-card p{
+    color: #a1a1aa9e;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* --------------------------- Responcive desgn --------------------------- */
+@media(max-width: 1420px) {
+    .container .language-section .section-body-genres .genre-body .genre-body-body{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 860px) {
+    .container .language-section .section-body-genres .genre-body .genre-body-body{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width: 650px) {
+    .container .language-section .section-body-genres .genre-body .genre-body-body{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 520px) {
+    .container .language-section .section-body-genres .genre-body .genre-body-body{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container .language-section .section-head .head-left-genres{
+        text-align: center;
+        width: 100%;
+    }
+}
+@media(max-width: 420px) {
+    .container .language-section .section-body-genres .genre-body .genre-body-body{
+        grid-template-columns: 1fr;
+    }
+    .container .language-section .section-head{
+        display: flex;
+    }
+}
