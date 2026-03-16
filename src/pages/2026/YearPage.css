@@ -39,7 +39,6 @@
 .container .movie-section .section-head{
     width: 85%;
     margin: auto;
-    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;

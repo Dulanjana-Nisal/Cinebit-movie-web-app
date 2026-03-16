@@ -104,10 +104,5 @@
         padding: 20px 0;
     }
 }
-@media(max-width: 370px){
-    .container .details-hero{
-        padding-top: 40px;
-    }
-}
 
 
